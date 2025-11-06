@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style4.css">
+    <title>altas</title>
+    <script src="funciones.js"></script>
+</head>
+<body>
+    <form action="sistema.html">
+                <div class="fond">
+                            <div class="bor">
+                            <legend>Datos</legend>
+                                <div class="materia">
+                                    <input type="text" id="txtuse" placeholder="MATERIA"><br>
+                                </div>
+
+                                <div class="codigo">
+                                    <input type="text" placeholder="CODIGO" id="cod">
+                                </div>
+
+                                <div class="logo">
+                                    <input type="file" id="log">
+                                </div>
+
+                                <div class="btn">
+                                    <input type="submit" value="ingresar"  onclick="if(validartexto('txtuse')==true && 
+                                                                                        validarnum('cod')==true)
+                                                                                        alert('materia ingresada')
+                                                                                    else{
+                                                                                        
+                                                                                        alert('materia invalida')
+                                                                                        event.preventDefault()//detener acción por defecto
+                                                                                        }
+                                                                                    "/>
+                                    <input type="reset">
+                                </div> 
+                                <p> si no esta registrado aga clic <a href="sistema.html">aqui</a> </p>
+                            </div>
+                </div>
+        </form>
+    </body>
+</html>
